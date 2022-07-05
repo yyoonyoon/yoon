@@ -8,13 +8,13 @@ API_KEY = "e4120647b18a21bba1620f670df613b3"
 nutritionix_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 
 # sign_up_body = {
-#     "password": "Qmpzal1029$$",
-#     "email": "duatkddbs25@naver.com",
+#     "password": "password",
+#     "email": "email id",
 #     "first_name": "Yeom",
 # }
 # sign_in_body = {
-#     "password": "Qmpzal1029$$",
-#     "email": "duatkddbs25@naver.com"
+#     "password": "password",
+#     "email": "email id"
 # }
 header = {
     "x-app-id" : APP_ID,
@@ -32,5 +32,5 @@ parameters = {
 # # response = requests.post(url= sign_up_endpoint, json= sign_up_body)   #sign in nutritionix api
 # response = requests.post(url= sign_in_endpoint, json= sign_in_body)   #sign up nutritionix api
 # # response = requests.get(url= nutritionix_endpoint, json= put_data_body, headers= header).json
-response = requests.get(url= nutritionix_endpoint, data= parameters, headers= header).json
+response = requests.get(url= nutritionix_endpoint, json= parameters, headers= header).json
 print(response)
